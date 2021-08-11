@@ -1,0 +1,66 @@
+% !TEX encoding = UTF-8 Unicode
+% !TEX TS-program = pdflatex
+% !TEX spellcheck = it-IT
+
+\documentclass[a4paper,10pt,headinclude,footinclude,titlepage]{book} %per tesi toptesi e suftesi dottorato 
+\usepackage[T1]{fontenc} %codifica font in uscita
+\usepackage[utf8]{inputenc} %lettere accentate
+\usepackage[italian]{babel} %lingua principale
+\usepackage{frontespizio} %frontespizio in inglese
+\usepackage[dottedtoc]{classicthesis} %dottedtoc allinea a destra le pagine nell'indice
+\usepackage{url} %consente di riconoscere url
+\usepackage{setspace} %modifica l'interlinea
+\usepackage{indentfirst} %rientro prima riga paragrafo
+\usepackage{quoting} %citazioni in display
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{tablefootnote}
+\usepackage{realboxes}
+
+
+
+\begin{document}
+
+
+\pagenumbering{roman}
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	\raggedleft % Right align the title page
+	
+	\rule{1pt}{\textheight} % Vertical line
+	\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
+	\parbox[b]{0.75\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+		
+		{\Huge\bfseries Cycling Stories}\\[2\baselineskip] % Title
+		%{\large\textit{A predictable subtitle}}\\[4\baselineskip] % Subtitle or further description
+		{\Large\textsc{Giovanni Maggi}} % Author name, lower case for consistent small caps
+		
+		\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+		
+		%{\noindent The Publisher~~\plogo}\\[\baselineskip] % Publisher and logo
+	}
+
+\end{titlepage}
+
+\cleardoublepage
+
+\input{chapters/intro}
+
+\tableofcontents
+
+\pagenumbering{arabic}
+
+\input{chapters/chapter1}
+\input{chapters/chapter2}
+
+\cleardoublepage
+
+\phantomsection
+
+%\addcontentsline{toc}{chapter}{Bibliography} %bibliografia nell'indice
+%\nocite{*}
+%\printbibliography
+\end{document}

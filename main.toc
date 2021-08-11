@@ -1,0 +1,5 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\vspace {-\cftbeforepartskip }
+\contentsline {chapter}{\numberline {1}{Ultracycling Dolomitica}}{3}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}{Tre giorni con le ruote grasse}}{5}{chapter.2}% 
